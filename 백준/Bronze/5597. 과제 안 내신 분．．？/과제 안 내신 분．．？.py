@@ -1,11 +1,5 @@
-a, b = [], []
-for i in range(1, 31):
-    a.append(i)
+a = [i for i in range(1, 31)]
 for i in range(1, 29):
-    b.append(int(input()))
-    
-c = list(set(a) - set(b))
-c.sort()
-for i in c:
-    print(i)
-
+    a.remove(int(input()))
+print(min(a))
+print(max(a))
